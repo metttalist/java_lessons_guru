@@ -16,7 +16,7 @@ public class Homework {
         int n = Integer.parseInt(in);
         do {
             if (!in.isEmpty()) break;
-            //            TODO не срабатывает проверка
+            // TODO не срабатывает проверка
             if (in == null && in.isEmpty()) continue;
         } while (in != null && !in.equals(""));
         {
