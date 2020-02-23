@@ -7,8 +7,6 @@
 
 package cycledowhile;
 
-import com.sun.xml.internal.bind.v2.TODO;
-
 import javax.swing.*;
 
 public class Homework {
@@ -17,7 +15,8 @@ public class Homework {
         in = JOptionPane.showInputDialog(null, "Введите положительное число", JOptionPane.INFORMATION_MESSAGE);
         int n = Integer.parseInt(in);
         do {
-//          TODO не срабатывает проверка
+            if (!in.isEmpty()) break;
+            //            TODO не срабатывает проверка
             if (in == null && in.isEmpty()) continue;
         } while (in != null && !in.equals(""));
         {
