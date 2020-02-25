@@ -1,4 +1,4 @@
-package homework_oop_first;
+package oop.myclass.homework_oop_first;
 
 public class MyClass {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package method;
 
-import myclass_oop_first.Person;
+import oop.myclass.Person;
 
 public class Method {
     public static void main(String[] args) {

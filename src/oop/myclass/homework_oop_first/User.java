@@ -7,7 +7,7 @@
 Примечание: id – это уникальный идентификатор. Он всегда является только целым положительным числом.
  */
 
-package homework_oop_first;
+package oop.myclass.homework_oop_first;
 
 public class User {
     //  Создайте класс User со следующими полями: id, логин, пароль.

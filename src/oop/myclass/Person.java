@@ -1,4 +1,4 @@
-package myclass_oop_first;
+package oop.myclass;
 
 public class Person {
 //  создание переменных

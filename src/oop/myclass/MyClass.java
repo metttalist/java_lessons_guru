@@ -1,4 +1,4 @@
-package myclass_oop_first;
+package oop.myclass;
 
 public class MyClass {
     public static void main(String[] args) {
