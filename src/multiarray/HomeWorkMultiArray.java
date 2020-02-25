@@ -10,5 +10,13 @@ package multiarray;
 public class HomeWorkMultiArray {
     public static void main(String[] args) {
 
+        char[][] arr = new char[2][3];
+        arr[0][0] = 1;
+        arr[0][1] = 2;
+        arr[0][1] = 2;
+        arr[1][0] = 3;
+        arr[1][1] = 4;
+        arr[1][1] = 4;
+        double sum = 0;
     }
 }
