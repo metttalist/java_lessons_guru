@@ -17,13 +17,21 @@
 Воспользуйтесь методами set и get для установки новых значения для каждого поля и получения результат.
  */
 
+/*
+Сделайте все поля в классе User private.
+Убедитесь, что доступа из основного класса к этим полям теперь нет (должна быть ошибка при попытке запустить программу).
+Используйте метод set для установки нового логина у объекта User.
+Используйте метод get для получения нового логина.
+ */
+
 package oop.myclass.homework_oop_first;
 
 public class User {
     //  Создайте класс User со следующими полями: id, логин, пароль.
-    int id;
-    String login;
-    String password;
+//    Сделайте все поля в классе User private.
+    private int id;
+    private String login;
+    private String password;
 
     public User(int id, String login, String password) {
 //      Присвойте полям полученные параметры.

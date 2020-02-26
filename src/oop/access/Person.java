@@ -4,19 +4,19 @@ public class Person {
 //  модификатор доступа везде и отовсюду
     public String name;
 
-//    модификатор доступа только внутри пакета в классах наследниках
+//  модификатор доступа только внутри пакета в классах наследниках
     protected String city;
 
 //  модификатор доступа только внутри класса
     private int age;
 
-    //  создание конструктора
+//  создание конструктора
     public Person(String name, String city, int age) {
         this.name = name;
         this.city = city;
         this.age = age;
     }
-    //  создание ещё одного конструктора для перегрузки
+//  создание ещё одного конструктора для перегрузки
     public Person(){
 //      передача новых данных в текущий конструктор
         this("Default name", "Default city", 18);
@@ -26,7 +26,7 @@ public class Person {
         return "Имя " + this.name + "; Город " + this.city + "; Возраст " + this.age;
     }
 
-    //  создание геттеров
+//  создание геттеров
     public String getName(){
         return this.name;
     }
@@ -52,7 +52,7 @@ public class Person {
         this.age = age;
     }
 
-    //  перегрузка сеттеров
+//  перегрузка сеттеров
     public void setName(){
 //      вызов уже существующего метода(сеттера)
         setName("Default name");
@@ -68,7 +68,7 @@ public class Person {
         this.age = 18;
     }
 
-    //    создание отдельного метода
+//  создание отдельного метода
     public void who_is_older(Person p){
         if (this.age > p.age)System.out.println(this.name + " старше чем " + p.name);
         else if (this.age == p.age) System.out.println(this.name + " и " + p.name + " ровесники ");

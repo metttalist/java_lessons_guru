@@ -8,9 +8,9 @@ public class MyClass {
         arr_user[1] = new User(321, "Ban", "Dan2");
 
 //      Выведите в консоль все поля обоих объектов в следующем виде (можно с использованием массива и цикла): «id=5; логин=admin; password=abc»
-        for (User temp : arr_user){
-            System.out.println("id=" + temp.id + "; " + "логин=" + temp.login + "; " + "password=" + temp.password);
-        }
+//        for (User temp : arr_user){
+//            System.out.println("id=" + temp.id + "; " + "логин=" + temp.login + "; " + "password=" + temp.password);
+//        }
 
 //      Создайте объект класса User.
         User dan = new User(1, "Dan", "Dan login");
@@ -23,6 +23,7 @@ public class MyClass {
         System.out.println(dan.getId());
         System.out.println(dan.getLogin());
         System.out.println(dan.getPassword());
-
+        dan.setLogin("Дэнчик");
+        System.out.println(dan.getLogin());
     }
 }
