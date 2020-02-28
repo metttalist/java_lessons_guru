@@ -1,4 +1,4 @@
-package oop.abstractclass;
+package oop.abstractclass.practice;
 
 
 public class Main {

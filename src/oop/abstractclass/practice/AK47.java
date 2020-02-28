@@ -1,4 +1,4 @@
-package oop.abstractclass;
+package oop.abstractclass.practice;
 
 // Данный класс наследуется от абстрактного класса
 public class AK47 extends Weapon {

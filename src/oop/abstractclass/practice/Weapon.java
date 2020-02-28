@@ -1,4 +1,4 @@
-package oop.abstractclass;
+package oop.abstractclass.practice;
 
 //Создание абстрактного класса. Для приведения к абстрактному классу используется слово abstract.
 public abstract class Weapon {
