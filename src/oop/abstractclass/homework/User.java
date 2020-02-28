@@ -12,13 +12,15 @@ public abstract class User {
         this.password = password;
     }
 
-    public int getId() {return id; }
+    public int getId() {
+        return id;
+    }
 
-    public String getLogin(){
+    public String getLogin() {
         return login;
     }
 
-    public String getPassword(){
+    public String getPassword() {
         return password;
     }
 
@@ -33,23 +35,26 @@ public abstract class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
     /*
     Добавьте ещё один метод set для каждого поля (сделав, по сути, перегрузку методов),но уже без параметра.
     Внутри метода должно присваиваться значение по умолчанию (id = 0; login=”guest”; password=””).
      */
-    public void setId(){
+    public void setId() {
         setId(0);
     }
 
-    public void setLogin(){
+    public void setLogin() {
         setLogin("guest");
     }
 
-    public void setPassword(){
+    public void setPassword() {
         this.password = "";
     }
 
-    public String get_info(){ return "Пользователь с логин: " + this.login + "; " + "id=" + this.id + "; " + " Пароль: " + this.password;}
+    public String get_info() {
+        return "Пользователь с логин: " + this.login + "; " + "id=" + this.id + "; " + " Пароль: " + this.password;
+    }
 
 //  Добавьте в класс User абстрактный метод printUser() (public и без возвращаемого значения).
     public abstract void printUser();

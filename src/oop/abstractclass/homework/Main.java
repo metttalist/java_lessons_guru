@@ -10,29 +10,22 @@ package oop.abstractclass.homework;
 
 public class Main extends User {
 
-    private String login;
-    private int id;
-    private String password;
+    String web_address;
 
-    public Main(int id, String login, String password) {
+
+    public Main(int id, String login, String password, String web_address) {
         super(id, login, password);
-        this.login = login;
-        this.id = id;
-        this.password = password;
+        this.web_address = web_address;
     }
 
     @Override
     public void printUser() {
-//        System.out.println("Пользователь с логин: " + this.login + "; " + "id=" + this.id + "; " + " Пароль: " + this.password);
-        System.out.println(this.getLogin());
-    }
 
-    static UserSocial u1 = new UserSocial(1, "Dan", "Password", 25, "Дэн");
-    static oop.abstractclass.homework.WebMaster u2 = new oop.abstractclass.homework.WebMaster(2, "Ban", "Password",  "www.dan.ru");
+    }
 
     public static void main(String[] args) {
         UserSocial u1 = new UserSocial(1, "Dan", "Password", 25, "Дэн");
-        WebMaster u2 = new WebMaster(2, "Ban", "Password",  "www.dan.ru");
+        WebMaster u2 = new WebMaster(2, "Ban", "Password", "www.dan.ru");
 
         System.out.println(u1.getName());
         u1.setName("Dan");
@@ -41,6 +34,8 @@ public class Main extends User {
         System.out.println(u2.getWeb_address());
         u2.setWeb_address("www.ban.com");
         System.out.println(u2.getWeb_address());
-    }
 
+        u1.printUser();
+        u2.printUser();
+    }
 }

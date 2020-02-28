@@ -18,5 +18,9 @@ public class WebMaster extends User {
 
     @Override
     public void printUser() {
+        System.out.println("Пользователь: " + this.getLogin());
+        System.out.println("   ID: " + this.getId());
+        System.out.println("   Web - адрес: " + this.getWeb_address());
+        System.out.println("   Пароль: " + this.getPassword());
     }
 }
