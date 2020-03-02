@@ -3,7 +3,7 @@ package oop.abstractclass.homework;
 import oop.interfaces.homework.PrintData;
 
 // Сделайте абстрактным класс User.
-public abstract class User {
+public abstract class  User implements PrintData {
     private int id;
     private String login;
     private String password;
