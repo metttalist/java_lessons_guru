@@ -6,7 +6,7 @@
  Запустите программу и проанализируйте отличия.
  */
 
-package exceptions.homework;
+package exceptions.first.homework;
 
 public class MainHomeWork {
     public static void main(String[] args) {
