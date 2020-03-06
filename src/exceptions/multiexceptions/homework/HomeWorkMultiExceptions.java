@@ -17,19 +17,16 @@ public class HomeWorkMultiExceptions {
         String in_numb = JOptionPane.showInputDialog(null, "Введите индекс массива");
         try {
             int a = Integer.parseInt(in_numb);
-            System.out.println(numbs[a]);
             if (a <= 0) throw new Exception();
-        }
-        catch (NumberFormatException e) {
+            else if (a > numbs.length) throw new ArrayIndexOutOfBoundsException();
+            System.out.println(numbs[a]);
+        } catch (NumberFormatException e) {
             System.out.println("Вы не ввели число!");
-        }
-        catch (Exception e) {
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Не допустимое число!");
+        } catch (Exception e) {
             System.out.println("Число должно быть положительным");
-        }
-//        catch (Exception e) {
-//            System.out.println(e);
-//        }
-        finally {
+        } finally {
             System.out.println("Программа завершается");
         }
     }
