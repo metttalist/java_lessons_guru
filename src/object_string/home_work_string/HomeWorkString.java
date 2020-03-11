@@ -10,31 +10,32 @@
 
 package object_string.home_work_string;
 
-import exceptions.myexceptions.homework.NullException;
-
 import javax.swing.*;
-import java.awt.*;
 
 public class HomeWorkString {
-    public static void main(String[] args) throws NullException, NumberException {
+    public static void main(String[] args) throws NullException, NumberExceptions, TooShortException, TooLongException {
         String in_1 = JOptionPane.showInputDialog(null, "Введите текущий день недели");
         try {
-            if (in_1.isEmpty()) throw new NullException();
-            if (in_1.matches("[0-9]*")) throw new NumberException();
+            if (in_1.isEmpty()) throw new NumberExceptions(NumberExceptions.NULL_EXCEPTION);
+            if (in_1.matches("[0-9]*")) throw new NumberExceptions(NumberExceptions.NOT_STRING);
+            if (in_1.length() < 3) throw new NumberExceptions(NumberExceptions.TOO_SHORT);
+            if (in_1.length() > 15) throw new NumberExceptions(NumberExceptions.TOO_LONG);
             System.out.println(in_1.toUpperCase());
             System.out.println(in_1.toLowerCase());
-            System.out.println(in_1.substring(1, 6));
+            System.out.println(in_1.substring(2, 6));
             if (in_1.indexOf("hello") == -1) {
                 System.out.println("Нет вхождений с данной подстрокой");
             } else System.out.println("Есть!");
-        } catch (StringIndexOutOfBoundsException e) {
-            System.out.println("Вы ввели число, а не строку!3");
-        } catch (NullException e) {
-            System.out.println(e);
-        } catch (NumberException e) {
-            System.out.println(e);
-        } catch (Exception e) {
-            System.out.println("Не корректыне данные!");
+        } catch (NumberExceptions e) {
+            if (e.getCode() == NumberExceptions.NULL_EXCEPTION)
+                JOptionPane.showMessageDialog(null, NullException);
+            else if (e.getCode() == NumberExceptions.NOT_STRING)
+                JOptionPane.showMessageDialog(null, NotStringException);
+            else if (e.getCode() == NumberExceptions.TOO_SHORT)
+                JOptionPane.showMessageDialog(null, TooShortException);
+            else if (e.getCode() == NumberExceptions.TOO_LONG)
+                JOptionPane.showMessageDialog(null, TooLongException);
+            else throw new Exception(e);
         }
     }
 }
