@@ -36,6 +36,32 @@ public class HomeWorkString {
 //            else if (e.getCode() == NumberExceptions.TOO_LONG)
 //                JOptionPane.showMessageDialog(null, TooLongException);
 //            else throw new Exception(e);
+            
+            
+            // Here is my sample solution:
+//                 public static void main(String []argh){
+//        System.out.println("Please enter your name:");
+//        Scanner in = new Scanner(System.in);
+//        String userInput = in.next();
+//        try {
+//            if(!userInput.isEmpty() && userInput.length() > 5) {
+//                System.out.println(userInput.toUpperCase());
+//                System.out.println(userInput.toLowerCase());
+//                System.out.println(userInput.substring(1, 5));
+//            }
+//            else {
+//                System.out.println("The input should be at least 5 characters, cannot continue...");
+//                throw new IllegalArgumentException("Illegal argument supplied!");
+//            }
+//        } catch (Throwable throwable) {
+//            // do something with the exception and throw it;
+//            System.out.println(throwable.getMessage());
+//            throw throwable;
+//        }
+//        in.close();
+//    }
+            
+            
         }
     }
 }
