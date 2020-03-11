@@ -27,15 +27,15 @@ public class HomeWorkString {
                 System.out.println("Нет вхождений с данной подстрокой");
             } else System.out.println("Есть!");
         } catch (NumberExceptions e) {
-            if (e.getCode() == NumberExceptions.NULL_EXCEPTION)
-                JOptionPane.showMessageDialog(null, NullException);
-            else if (e.getCode() == NumberExceptions.NOT_STRING)
-                JOptionPane.showMessageDialog(null, NotStringException);
-            else if (e.getCode() == NumberExceptions.TOO_SHORT)
-                JOptionPane.showMessageDialog(null, TooShortException);
-            else if (e.getCode() == NumberExceptions.TOO_LONG)
-                JOptionPane.showMessageDialog(null, TooLongException);
-            else throw new Exception(e);
+//            if (e.getCode() == NumberExceptions.NULL_EXCEPTION)
+//                JOptionPane.showMessageDialog(null, NullException);
+//            else if (e.getCode() == NumberExceptions.NOT_STRING)
+//                JOptionPane.showMessageDialog(null, NotStringException);
+//            else if (e.getCode() == NumberExceptions.TOO_SHORT)
+//                JOptionPane.showMessageDialog(null, TooShortException);
+//            else if (e.getCode() == NumberExceptions.TOO_LONG)
+//                JOptionPane.showMessageDialog(null, TooLongException);
+//            else throw new Exception(e);
         }
     }
 }
